@@ -11,11 +11,11 @@ int main(void)
 
 	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 	{
-		putchar(lowercase);
 		if (lowercase == 'q' || lowercase == 'e')
 		{
 			continue;
 		}
+		putchar(lowercase);
 	}
 	putchar('\n');
 	return (0);
