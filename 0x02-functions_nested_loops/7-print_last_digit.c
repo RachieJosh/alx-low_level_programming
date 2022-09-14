@@ -4,10 +4,14 @@
   * print_last_digit - A function that prints the last digit of a number
   * @n: Character to be checked
   *
-  * Return: The value of the last digit
+  * Return: Always 0 (Success)
  */
 int print_last_digit(int n)
 {
-	_putchar('0' + _abs(n % 10));
-	return (_abs(n % 10));
+	n = n % 10;
+
+	if (n < 0)
+		n = -n;
+	_putchar(n = '0');
+	return (n);
 }
