@@ -2,21 +2,34 @@
 
 /**
   * print_to_98 - prints all natural numbers from input to 98
+  * @n: Character to be checked
   *
-  * @n: Number where count starts
- */
+  * Return: Always 0 (Success)
+  */
 void print_to_98(int n)
 {
-	if (n >= 98)
+	int w;
+
+	if (n > 98)
 	{
-		while (n > 98)
-			printf("%d, ", n--);
-		printf("%d/n", n);
-	}
-	else
+		for (w = n; w >= 98; w--)
+		{
+			printf("%d", w);
+			if (w != 98)
+			{
+				printf(", ");
+			}
+		}
+	} else
 	{
-		while (n < 98)
-			printf("%d, ", n++);
-		printf("%d/n", n);
+		for (w = n; w <= 98; w++)
+		{
+			printf("%d", w);
+			if (w != 98)
+			{
+				printf(", ");
+			}
+		}
 	}
+	printf("\n");
 }
