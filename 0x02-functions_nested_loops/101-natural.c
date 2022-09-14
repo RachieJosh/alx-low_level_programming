@@ -17,6 +17,6 @@ int main(void)
 			y += x;
 		}
 	}
-	printf("%d\n", b);
+	printf("%d\n", y);
 	return (0);
 }
