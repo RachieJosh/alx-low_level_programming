@@ -4,20 +4,20 @@
 /**
   * print_most_numbers - A function that prints the numbers except 2 and 4
   *
-  * Return: Always 0. (Success)
+  * Return: nothing
  */
 
 void print_most_numbers(void)
 {
-	int i;
+	int n;
 
-	for (i = 48; i < 58; i++)
+	for (n = 48; n < 58; n++)
 	{
-		if ((i == 50) || (i == 52))
+		if ((n == 50) || (n == 52))
 		{
 			continue;
 		}
-		putchar(i);
+		putchar(n);
 	}
 	_putchar(10);
 }
