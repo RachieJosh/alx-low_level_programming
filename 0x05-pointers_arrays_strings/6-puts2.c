@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <string.h>
 /**
   * puts2 - It prints every other character of a string,
   *         starting with first character, then new line.
