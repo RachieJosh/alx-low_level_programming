@@ -20,7 +20,7 @@ int main(void)
 		while ((2772 - 122) > r)
 		{
 			w = rand() % 62;
-			y[i] = t[j];
+			y[q] = t[j];
 			r = r + t[w];
 			q++;
 		}
