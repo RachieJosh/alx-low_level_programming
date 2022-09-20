@@ -4,15 +4,15 @@
 
 /**
   * _strlen - Returns the length of a string
-  * @s: Character to be checked
+  * @str: Character to be checked
   *
   * Return: The length of the string
  */
 
-int _strlen(char *s)
+int _strlen(char *str)
 {
-	char *s;
+	char *str;
 	int len;
 
-	len = strlen(*s);
+	len = strlen(*str);
 }
