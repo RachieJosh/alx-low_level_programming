@@ -5,6 +5,7 @@
   *
   * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	int num1;
@@ -13,7 +14,7 @@ int main(void)
 
 	for (num1 = 0; num1 <= 9; num1++)
 	{
-		for (num1 = 0; num2 <= 9; num2++)
+		for (num2 = 0; num2 <= 9; num2++)
 		{
 			for (num3 = 0; num3 <= 9; num3++)
 			{
@@ -32,5 +33,6 @@ int main(void)
 		}
 	}
 	putchar('\n');
+
 	return (0);
 }
