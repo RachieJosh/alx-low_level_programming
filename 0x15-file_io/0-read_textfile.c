@@ -1,11 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
-#include <unistd.h>
-
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
 
 /**
   * read_textfile - A function that reads a text file and prints it
@@ -19,6 +12,23 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd, printed, written;
-	char *buff;
+	char *buf;
 
-	buff 
+	buf malloc(letters);
+	if (buf == NULL)
+		return (0);
+	if (filename == -1)
+		return (0);
+	fd = open(filename, O_RDWR);
+	if (fd == -1)
+		return (0);
+	printed = read(fd, buf, letters);
+	if (printed == -1)
+		return (0);
+	written = write(STDOUT_FILEN0, buf, printed);
+	if (written == -1)
+		return (0);
+	if (close(fd) == -1)
+		return (0);
+	free(buf);
+	return (printed);
